@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Gameplays",
-    "slug": "Gameplays",
+    "name": "jamapp",
+    "slug": "jamapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
