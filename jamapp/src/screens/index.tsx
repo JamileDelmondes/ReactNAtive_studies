@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, Image } from 'react-native';
 import { styles } from './styles';
+import { IllustrationImg } from '../assets/illustration.png';
+import { StatusBar } from 'expo-status-bar';
 
 
 export function SignIn(){
@@ -8,16 +10,21 @@ export function SignIn(){
 
   return(
     <View style={styles.container}>
-      <Text>
-        Hello World, ta na hora de codar
+      <StatusBar barStyle='light-content' backgroundColor={"transparent"} translucent />
+        <Image source={IllustrationImg} style={styles.image} resizeMode='stretch'/>
+    <View style= {styles.content}>
+      <Text style={styles.title}>
+        Organize Suas {`\n`}
+        Jogatinas {`\n`}
+        facilmente
       </Text>
-      <TextInput style={styles.input}
-      onChangeText={setText}
-      />
+      <Text style={styles.subtitle}>
+        Crie grupos para jogar seus games{`\n`}
+        favoritos com seus amigos
+      </Text>
 
-        <Text>
-          Você digitou: {text}
-        </Text>
+
+    </View>
     </View>
   )
 
