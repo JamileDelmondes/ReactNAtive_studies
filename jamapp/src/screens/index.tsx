@@ -12,6 +12,7 @@ export function SignIn(){
 
   return(
     <View style={styles.container}>
+
       <StatusBar barStyle='light-content' backgroundColor={"transparent"} translucent />
       <Image source={IllustrationImg} style={styles.image} resizeMode='stretch'/>
     <View style= {styles.content}>
@@ -24,7 +25,9 @@ export function SignIn(){
         Crie grupos para jogar seus games{`\n`}
         favoritos com seus amigos
       </Text>
-      <ButtonIcon/>
+      <ButtonIcon title="Entrar com Discord"
+      
+      />
 
 
     </View>
