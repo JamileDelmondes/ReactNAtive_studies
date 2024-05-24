@@ -5,7 +5,7 @@ import { SignIn } from './src/screens/index';
 
 export default function App(){
   return(
-    <SignIn></SignIn>
+    <SignIn/>
   )
 
 }
